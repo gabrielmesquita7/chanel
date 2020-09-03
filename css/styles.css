@@ -1,0 +1,38 @@
+
+body{
+    background-color: aquamarine;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+header{
+    background-color: black;
+    height: 50px;
+    color: white;
+    font-size: 150%;
+}
+
+#div_esq{
+    background-color: white;
+    min-height: 200px;
+    width: 50%;
+    float: left;
+}
+
+#div_dir{
+    background-color: orange;
+    min-height: 200px;
+    width: 50%;
+    float: right;
+}
+
+footer{
+    clear: both;
+    background-color: blue;
+    height: 30px;
+}
+
+
