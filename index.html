@@ -2,98 +2,96 @@
 <html lang='pt-br'>
     <head>
         <title>Chanel</title>
+        <link rel="stylesheet" type="text/css" href="css/normalize.css"/> 
         <link rel="stylesheet" type="text/css" href="css/styles.css"/> 
+        <link href="https://fonts.googleapis.com/css2?family=Questrial&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap" rel="stylesheet">
     </head>
     <body>
         <header>
-            <div id="logo">
-                <div class="Logodimen">
-                    <img src="img/logo.jpg" width="22%" height="22%">
+            <div id="navbar">
+                <a href="#default" id="logo">CHANEL</a>
+                <div id="navbar-right">
+                    <a href= "#Home">Home</a>
+                    <a href= "#Produtos">Produtos</a>
+                    <a href= "#Acessorios">Acessorios</a>
+                    <a href= "#Contato">Contato</a>
+                    <a href= "#Sobre">Sobre</a>
                 </div>
-            </div>
-            <p style="text-align: center;">
-                <i>Chanel</i>
-            </p>
-            <div style="text-align: center;">
-                <a href= "#Home">Home</a>
-                <a href= "#Produtos">Produtos</a>
-                <a href= "#Acessorios">Acessorios</a>
-                <a href= "#Contato">Contato</a>
-                <a href= "#Sobre">Sobre</a>
             </div>
         </header>
-        <div></div>
-        <div></div>
-        <div id="div">
-            <div id="Home" style="text-align: center;">
-                <h1>Home</h1>
-                <div>
-                    <p>
-                        CHANEL é uma empresa privada francesa que pertence a Alain e Gerard Wertheimer, netos de Pierre Werthimer, que foi um parceiro de negócio da couturière Gabrielle Bonheur Chanel. A Chanel S.A. é uma empresa especializada em alta-costura, pret-à-porter, bens de luxo e acessórios de moda.<br>
-                        •Origem: Francesa<br>
-                        •Fundação: 1909<br>
-                        •Fundador: Coco Chanel<br>
-                        •Sede Mundial: Paris, França<br>
-                        •Proprietário da marca: Chanel S.A.<br>
-                        •Chairman: Alain Wertheimer<br>
-                        •Presidente: Bruno Pavolvsky<br>
-                        •Estilista: Karl Lagerfeld<br>
-                        •Lojas: + 310<br>
-                        •Segmento: Moda de luxo<br>
-                        <br>
-                        <div class="Logodimen">
-                            <img src="img/chanel.jpg" width="22%" height="22%">
-                        </div>
-                    </p>
+        <section id="Home">
+            <div class="containe">
+                <h1 style="text-align: center; font-family: 'Questrial', sans-serif;">Home</h1>
+
+                <img src="img/chanel.jpg" alt="">
+
+                <div class="text2">
+                    CHANEL é uma empresa privada francesa que pertence a Alain e Gerard Wertheimer, netos de Pierre Werthimer, que foi um parceiro de negócio da couturière Gabrielle Bonheur Chanel. A Chanel S.A. é uma empresa especializada em alta-costura, pret-à-porter, bens de luxo e acessórios de moda.<br>
+                    •Origem: Francesa<br>
+                    •Fundação: 1909<br>
+                    •Fundador: Coco Chanel<br>
+                    •Sede Mundial: Paris, França<br>
+                    •Proprietário da marca: Chanel S.A.<br>
+                    •Chairman: Alain Wertheimer<br>
+                    •Presidente: Bruno Pavolvsky<br>
+                    •Estilista: Karl Lagerfeld<br>
+                    •Lojas: + 310<br>
+                    •Segmento: Moda de luxo<br>
                 </div>
             </div>
-
-
-            <div id="Produtos">
-                <div class="Logodimen">
-                    <h1 style="text-align: center;">Produtos</h1>
-                    <img src="img/01.jfif" width="24.75%" height="10%">
-    
-                    <img src="img/02.jfif" width="24.75%" height="10%">
-    
-                    <img src="img/03.jfif" width="24.75%" height="10%">
-    
-                    <img src="img/04.jfif" width="24.75%" height="10%">
-
+        </section>
+        <section id="Produtos">
+            <h1 style="text-align: center; font-family: 'Questrial', sans-serif;">Produtos</h1>
+            <div class="slideshow-container">
+                <div class="mySlides fade">
+                  <div class="numbertext">1 / 4</div>
+                  <img src="img/01.jfif" style="width:100%">
+                  <div class="text">01</div>
                 </div>
-            </div>
-
-            <div id="Acessorios">
-                <div class="Logodimen">
-                    <h1 style="text-align: center;">Acessorios</h1>
+              
+                <div class="mySlides fade">
+                  <div class="numbertext">2 / 4</div>
+                  <img src="img/02.jfif" style="width:100%">
+                  <div class="text">02</div>
+                </div>
+              
+                <div class="mySlides fade">
+                  <div class="numbertext">3 / 4</div>
+                  <img src="img/03.jfif" style="width:100%">
+                  <div class="text">03</div>
+                </div>
                 
-                    <img src="img/j2.jpg" width="100%" height="10%">
-
-                    <img src="img/J1.jpg" width="47%" height="10%">
-    
-                    <img src="img/j3.jpg" width="47%" height="10%">
-
+                <div class="mySlides fade">
+                    <div class="numbertext">4 / 4</div>
+                    <img src="img/04.jfif" style="width:100%">
+                    <div class="text">04</div>
                 </div>
+              
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
             </div>
-
-            <div id="Contato">
-                <section class="content">
-                    <div class="contato">
-                        <h3>Contacte-nos</h3>
-                        <form class="form" method="POST">
-                            <input class="field" name="nome" placeholder="Nome">
-                            <input class="field" name="email" placeholder="E-mail">
-                            <textarea class="field" name="mesage" placeholder="Digite sua mensagem aqui."></textarea>
-                            <input class="field" type="submit" value= "Enviar">
-                        </form>
-                    </div>
-
-                </section>
-            </div>
-
-            <div id="Sobre" style="text-align: center;">
-                <h1>Sobre</h1>
-                <div>
+            <br>
+            <div style="text-align:center">
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
+                <span class="dot" onclick="currentSlide(4)"></span>
+            </div>   
+        </section>
+        <section id="Acessorios">
+            <h1 style="text-align: center; font-family: 'Questrial', sans-serif;">Acessorios</h1>
+            <div class="container">
+                <img src="img/j2.jpg" alt="Norway" style="width:100%;">
+                <div class="text-block">
+                  <h4>COCO CRUSH</h4>
+                  <p>Très mignon</p>
+                </div>
+              </div>
+        </section>
+        <section id="Sobre">
+                <h1 style="font-family: 'Questrial', sans-serif;">Sobre</h1>
+                <div style="font-family: 'Noto Sans JP', sans-serif; font-size: 25px;">
                     <p>
                         A era de Gabrielle Chanel (1883-1971) na empresa é, com certeza, a mais memorável<br>
                         marcada pelos vestidos caros e estilosos que revolucionaram a indústria da moda mundial<br>
@@ -113,15 +111,25 @@
                         só era utilizado na confecção de roupas íntimas – e twinsets que o tempo se encarregaria de<br>
                         elevar ao patamar de clássicos.<br>
                         <br>
-                        <div class="Logodimen">
-                            <img src="img/sobre1.png" width="20%" height="20%">
-                        </div>
                     </p>
                 </div>
-            </div>
-        </div>
+        </section>
+        <section id="Contato">
+            <section class="content">
+                <div class="contato">
+                    <h3>Contacte-nos</h3>
+                    <form class="form" method="POST">
+                        <input class="field" name="nome" placeholder="Nome">
+                        <input class="field" name="email" placeholder="E-mail">
+                        <textarea class="field" name="mesage" placeholder="Digite sua mensagem aqui."></textarea>
+                        <input class="field" type="submit" value= "Enviar">
+                    </form>
+                 </div>
+            </section>
+        </section>
         <footer>
-           
+        <p>Desenvolvido por Gabriel Mesquita</p>   
         </footer>
+        <script src="js/index.js"></script>
     </body>
 </html>
