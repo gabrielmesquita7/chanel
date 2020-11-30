@@ -41,43 +41,82 @@
                 </div>
             </div>
         </section>
-        <section id="Produtos">
-            <h1 style="text-align: center; font-family: 'Questrial', sans-serif;">Produtos</h1>
-            <div class="slideshow-container">
-                <div class="mySlides fade">
-                  <div class="numbertext">1 / 4</div>
-                  <img src="img/01.jfif" style="width:100%">
-                  <div class="text">01</div>
-                </div>
-              
-                <div class="mySlides fade">
-                  <div class="numbertext">2 / 4</div>
-                  <img src="img/02.jfif" style="width:100%">
-                  <div class="text">02</div>
-                </div>
-              
-                <div class="mySlides fade">
-                  <div class="numbertext">3 / 4</div>
-                  <img src="img/03.jfif" style="width:100%">
-                  <div class="text">03</div>
-                </div>
-                
-                <div class="mySlides fade">
-                    <div class="numbertext">4 / 4</div>
-                    <img src="img/04.jfif" style="width:100%">
-                    <div class="text">04</div>
-                </div>
-              
-                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        <section id="Produtos" style="text-align: center;">
+            <h2>PRODUTOS</h2>
+            <div id="myBtnContainer">
+            <button class="btn active" onclick="filterSelection('all')"> Mostrar tudo</button>
+            <button class="btn" onclick="filterSelection('vestidos')"> Vestidos</button>
+            <button class="btn" onclick="filterSelection('perfumes')"> Perfumes</button>
+            <button class="btn" onclick="filterSelection('joias')"> Joias</button>
             </div>
-            <br>
-            <div style="text-align:center">
-                <span class="dot" onclick="currentSlide(1)"></span>
-                <span class="dot" onclick="currentSlide(2)"></span>
-                <span class="dot" onclick="currentSlide(3)"></span>
-                <span class="dot" onclick="currentSlide(4)"></span>
-            </div>   
+
+            <div class="row">
+                <div class="column vestidos">
+                    <div class="content">
+                    <img src="img/vestido01.jpg" alt="Vestido" style="width:100%">
+                    <h4>$199</h4>
+                    <p></p>
+                    </div>
+                </div>
+                <div class="column vestidos">
+                    <div class="content">
+                    <img src="img/vestido02.jpg" alt="Vestido" style="width:100%">
+                    <h4>$159</h4>
+                    <p></p>
+                    </div>
+                </div>
+                <div class="column vestidos">
+                    <div class="content">
+                    <img src="img/vestido03.jpg" alt="Vestido" style="width:100%">
+                    <h4>$189</h4>
+                    <p></p>
+                    </div>
+                </div>
+
+                <div class="column perfumes">
+                    <div class="content">
+                    <img src="img/perfume01.jpg" alt="Perfume" style="width:100%">
+                    <h4>$89</h4>
+                    <p></p>
+                    </div>
+                </div>
+                <div class="column perfumes">
+                    <div class="content">
+                    <img src="img/perfume02.jpg" alt="Perfume" style="width:100%">
+                    <h4>$99</h4>
+                    <p></p>
+                    </div>
+                </div>
+                <div class="column perfumes">
+                    <div class="content">
+                    <img src="img/perfume03.jpg" alt="Perfume" style="width:100%">
+                    <h4>$110</h4>
+                    <p></p>
+                    </div>
+                </div>
+
+                <div class="column joias">
+                    <div class="content">
+                    <img src="img/joia01.jpg" alt="Joia" style="width:100%">
+                    <h4>$399</h4>
+                    <p></p>
+                    </div>
+                </div>
+                <div class="column joias">
+                    <div class="content">
+                    <img src="img/joia02.jpg" alt="Joia" style="width:100%">
+                    <h4>$499</h4>
+                    <p></p>
+                    </div>
+                </div>
+                <div class="column joias">
+                    <div class="content">
+                    <img src="img/joia03.jpg" alt="Joia" style="width:100%">
+                    <h4>$1999</h4>
+                    <p></p>
+                    </div>
+                </div>
+            </div>
         </section>
         <section id="Acessorios">
             <h1 style="text-align: center; font-family: 'Questrial', sans-serif;">Acessorios</h1>
@@ -118,11 +157,11 @@
             <section class="content">
                 <div class="contato">
                     <h3>Contacte-nos</h3>
-                    <form class="form" method="POST">
+                    <form class="form" method="POST" id="contatenos">
                         <input class="field" name="nome" placeholder="Nome">
                         <input class="field" name="email" placeholder="E-mail">
                         <textarea class="field" name="mesage" placeholder="Digite sua mensagem aqui."></textarea>
-                        <input class="field" type="submit" value= "Enviar">
+                        <input class="field" type="submit" value= "Enviar" id="b">
                     </form>
                  </div>
             </section>
